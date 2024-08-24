@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bloggers</title>
+    <link rel="icon" href="blog-icon.png" type="image/x.icon">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Blog Writing</h1>
+        <p class="'header-p">“Exploring ideas, expressing thoughts, and engaging minds.”</p>
+        <button class="create-post" id="createpost">CREATE POST</button>
+    </header>
+    <main>
+        <div id="postCreatedMessage" class="postCreatedMessage">
+            Post created successfully!
+        </div>
+        <section class="post-container">
+            <!-- Blog posts will be dynamically inserted here -->
+        </section>
+    </main>
+    <div class="content" id="maincontent">
+        <div class="content-1">
+            <form id="postform">
+                <span class="close" id="closebutton">&times;</span>
+                <label for="title">Title</label>
+                <input type="text" class="title">
+                <label for="description">Description</label>
+                <textarea type="text" class="description" rows="5"></textarea>
+                <button type="submit">Post it</button>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <p class="footer-p">&copy; 2024 Blog Writing. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+

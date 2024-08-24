@@ -1,0 +1,180 @@
+body {
+    font-family: Roboto, sans-serif;
+    background-color: antiquewhite;
+    margin: 0;
+    width: auto;
+}
+
+header {
+    background-color: rgb(122, 104, 104);
+    text-align: center;
+}
+
+h1, .header-p {
+    text-align: center;
+    color: rgb(212, 195, 195);
+    font-weight: 600;
+    margin: 0;
+}
+
+.create-post {
+    display: block;
+    margin: 10px auto;
+    background-color: rgb(184, 189, 183);
+    border: none;
+    border-radius: 4px;
+    padding: 8px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: padding 0.15s;
+}
+
+.create-post:hover {
+    padding: 12px;
+}
+.post-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width:90%;
+}
+main
+{
+    padding-left: 18px;
+}
+.post {
+    background-color: beige;
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.postCreatedMessage 
+{
+    background-color: #d4edda;
+    color: #155724;
+    padding: 10px;
+    margin: 20px 0;
+    border: 1px solid #c3e6cb;
+    border-radius: 5px;
+    display: none;
+    text-align: center;
+}
+ 
+.content
+{
+    display:none;
+    position:fixed;
+    z-index:1000;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    overflow: auto;
+    background-color: rgba(166, 153, 153, 0.7);
+    justify-content: center;
+    align-items: center;
+}
+.content-1
+{
+    background-color: #ded1d1;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 500px;
+    width: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
+form
+{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center ;
+    gap: 10px;
+}
+.close
+{
+    background-color: #ccc;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9em;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+.close:hover 
+{
+    background-color: #999;
+}
+
+.post-header {
+    margin-bottom: 10px;
+}
+
+.post-title {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.post-body {
+    margin-bottom: 10px;
+}
+
+.post-description {
+    margin: 0;
+    color: #333; 
+}
+
+.post-footer {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.edit, .dlt {
+    background-color: rgb(184, 189, 183);
+    border: none;
+    border-radius: 4px;
+    padding: 8px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: padding 0.15s;
+}
+
+.edit:hover, .dlt:hover {
+    padding: 12px;
+}
+
+/* Style the "Post it" button similar to the "Create post" button */
+button[type="submit"] {
+    background-color: rgb(184, 189, 183);
+    border: none;
+    border-radius: 4px;
+    padding: 8px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: padding 0.15s;
+}
+
+button[type="submit"]:hover {
+    padding: 12px;
+}
+
+footer
+{
+    background-color: rgb(122, 104, 104);
+    position: absolute;
+    bottom: 0;
+    left:0;
+    right:0;
+    text-align: center;
+    width: auto;
+}
+
+
